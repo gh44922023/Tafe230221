@@ -6,9 +6,76 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="LightCyan"
+	Foreground="DarkCyan">
+
 	<Grid>
-		<TextBlock
-			Text="Currency Converter"/>
-    </Grid>
+
+		<StackPanel Orientation="Vertical" Padding="10">
+			<TextBlock x:Name="textblockTitle"
+			 HorizontalAlignment="Center"
+			 Margin="0,100,0,0"
+			TextWrapping="Wrap"
+			Text="Currency Conversion Calculator"
+			VerticalAlignment="Top"
+			FontSize="36"
+			FontWeight="Bold"/>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+				<StackPanel Orientation="Vertical" Padding="10" Width="200">
+					<TextBlock x:Name="textblockAmount"
+						HorizontalAlignment="Center"
+						TextWrapping="Wrap"
+						Text="Amount $"
+						VerticalAlignment="Top"
+						FontSize="36"/>
+					<TextBox x:Name="textboxAmount" Width="180" HorizontalAlignment="Center"></TextBox>
+				</StackPanel>
+
+				<StackPanel Orientation="Vertical" Padding="10" Width="200">
+					<TextBlock x:Name="textblockFrom"
+						HorizontalAlignment="Center"
+						TextWrapping="Wrap"
+						Text="From"
+						VerticalAlignment="Top"
+						FontSize="36"/>
+					<ComboBox x:Name="comboboxFrom"  Width="180" HorizontalAlignment="Center">
+						<x:String>British Pound</x:String>
+						<x:String>Euro</x:String>
+						<x:String>Indian Rupee</x:String>
+						<x:String>US Dollar</x:String>
+					</ComboBox>
+				</StackPanel>
+
+				<StackPanel Orientation="Vertical" Padding="10" Width="200">
+					<TextBlock x:Name="textblockTo"
+						HorizontalAlignment="Center"
+						TextWrapping="Wrap"
+						Text="To"
+						VerticalAlignment="Top"
+						FontSize="36"/>
+					<ComboBox x:Name="comboboxTo" Width="180" HorizontalAlignment="Center">
+						<x:String>British Pound</x:String>
+						<x:String>Euro</x:String>
+						<x:String>Indian Rupee</x:String>
+						<x:String>US Dollar</x:String>
+					</ComboBox>
+				</StackPanel>
+
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button x:Name="buttonCalculate" Content="Calculate" Foreground="DarkCyan" Width="250" Height="50" FontSize="32" HorizontalAlignment="Center" Margin="5" Click="buttonCalculate_Click"/>
+				<Button x:Name="buttonExit" Content="Exit" Foreground="DarkCyan" Width="250" Height="50" FontSize="32" HorizontalAlignment="Center"  Margin="5" Click="buttonExit_Click"/>
+			</StackPanel>
+			<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+				<TextBlock x:Name="textblockDisplayInput" Width="600" FontSize="20" HorizontalAlignment="Center"></TextBlock>
+				<TextBlock x:Name="textblockDisplayOutput" Width="600" FontSize="36" HorizontalAlignment="Center" FontWeight="Bold"></TextBlock>
+			</StackPanel>
+
+		</StackPanel>
+
+	</Grid>
+
 </Page>
