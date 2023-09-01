@@ -20,36 +20,11 @@ namespace Calculator
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class Menu : Page
+	public sealed partial class Currency_Converter : Page
 	{
-		public Menu()
+		public Currency_Converter()
 		{
 			this.InitializeComponent();
-		}
-
-		private void mathCalc_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(MainPage));
-		}
-
-		private void mortCalc_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(Mortgage_Calculator));
-		}
-
-		private void tripCalc_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(Trip_Calculator));
-		}
-
-		private void currConv_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(Currency_Converter));
-		}
-
-		private void exit_Click(object sender, RoutedEventArgs e)
-		{
-			exit_Click(null, null);
 		}
 	}
 }
