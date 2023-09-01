@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="Calculator.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Grid Background="LightCyan">
+		<StackPanel>
+			<TextBlock
+				x:Name="menuTitle"
+				FontSize="100"
+				Text="Univeral Calculator"
+				FontWeight="Bold"
+				Foreground="DarkTurquoise"
+				Margin="0 30"
+				HorizontalAlignment="Center"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button
+					x:Name="mathCalc"
+					Content="Math Calculator"
+					Click="mathCalc_Click"
+					FontSize="50"
+					Foreground="DarkCyan"
+					Margin="0 50 25 0"
+					Padding="20"/>
+				<Button
+					x:Name="mortCalc"
+					Content="Mortgage Calculator"
+					Click="mortCalc_Click"
+					FontSize="50"
+					Foreground="DarkCyan"
+					Margin="25 50 0 0"
+					Padding="20"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button
+					x:Name="tripCalc"
+					Content="Trip Calculator"
+					Click="tripCalc_Click"
+					FontSize="50"
+					Foreground="DarkCyan"
+					Margin="0 50 25 0"
+					Padding="20"/>
+				<Button
+					x:Name="currConv"
+					Content="Currency Converter"
+					Click="currConv_Click"
+					FontSize="50"
+					Foreground="DarkCyan"
+					Margin="25 50 0 0"
+					Padding="20"/>
+			</StackPanel>
+			<Button
+				x:Name="exitButton"
+				Content="Exit"
+				Click="exit_Click"
+				FontSize="50"
+				Foreground="DarkCyan"
+				Margin="0 50 0 0"
+				HorizontalAlignment="Center"
+				Padding="20"/>
+		</StackPanel>
+		<Image
+			x:Name="Logo"
+			Source="/Images/abacus.png"
+			Height="100"
+			VerticalAlignment="Top"
+			HorizontalAlignment="Right"/>
+	</Grid>
+</Page>
