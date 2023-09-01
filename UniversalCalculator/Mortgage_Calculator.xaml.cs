@@ -107,7 +107,7 @@ namespace Calculator
 
 		private void exit_Click(object sender, RoutedEventArgs e)
 		{
-			exit_Click(sender, e);
+			exit_Click(null, null);
 		}
 	}
 }

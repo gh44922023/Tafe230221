@@ -26,5 +26,29 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		private void buttonTodayDate_Click(object sender, RoutedEventArgs e)
+		{
+			DateTime today = DateTime.Today;
+			dateDateHire.Date = today;
+
+		}
+
+		private void buttonCalculate_Click(object sender, RoutedEventArgs e)
+		{
+			string daysString = textBoxNumberDaysHired.Text;
+			int days = int.Parse(daysString);
+
+			string priceString = textBoxPricePerDay.Text;
+			double price = double.Parse(priceString);
+
+			double amount = days * price;
+			textBoxAmount.Text = amount.ToString();
+		}
+
+		private void buttonExit_Click(object sender, RoutedEventArgs e)
+		{
+			Environment.Exit(0);
+		}
 	}
 }

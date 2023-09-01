@@ -16,7 +16,7 @@
 				FontWeight="Bold"
 				Foreground="DarkTurquoise"
 				Margin="0 30"
-				HorizontalAlignment="Center" SelectionChanged="menuTitle_SelectionChanged" Width="972"/>
+				HorizontalAlignment="Center" Width="972"/>
 			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 				<Button
 					x:Name="mathCalc"
