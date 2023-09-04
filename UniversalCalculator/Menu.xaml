@@ -15,8 +15,8 @@
 				Text="Universal Calculator"
 				FontWeight="Bold"
 				Foreground="DarkCyan"
-				Margin="0 30"
-				HorizontalAlignment="Center" Width="972"/>
+				Margin="0 25"
+				HorizontalAlignment="Center" Width="746"/>
 			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 				<Button
 					x:Name="mathCalc"
@@ -69,5 +69,10 @@
 			Height="100"
 			VerticalAlignment="Top"
 			HorizontalAlignment="Right" Width="154" Margin="0,50,45,0"  />
+		<TextBlock
+			x:Name="textblockBy"
+			Foreground="DarkCyan"
+			Text="Developed by: Gordon, Brodie and Jeffrey"
+			HorizontalAlignment="Right" Margin="0,150,20,0" />
 	</Grid>
 </Page>
